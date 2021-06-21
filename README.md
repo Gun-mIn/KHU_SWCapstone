@@ -10,10 +10,11 @@
 ## 1.2 과제 주요내용
 ### 1.2.1 사용하고자 하는 데이터 셋
 분류 모델 학습에 Celeb-DF와 FaceForensics++(FF++)의 NeuralTextures(c40, LQ) 데이터를 사용하고자 한다. 이는 선행 연구를 참조하였을 때, 정확도가 낮은 편에 속하는 도전적인 데이터 셋이므로 이에 대한 성능 향상이 필요하다 생각하게 되었다.  
-<br>
+
 <p align="center">
 <img src="./3. Figures/Table1.png"height="180px" width="494px" />
-<b>Table 1.</b> 모델별 데이터 셋에 대한 AUC(%) 점수표[2].
+<br>
+<b>Table 1.</b> 모델별 데이터 셋에 대한 AUC(%) 점수표[2].</br>
 </p>
 <br>
 <p align="center">
