@@ -42,15 +42,11 @@ Table 1을 통해 Celeb-DF가 이전 세대 데이터 셋에 비해 조작 탐�
 <b>Figure 1.</b> 네트워크에 데이터를 넣어주기 전 영상(mp4)에서 프레임(jpg)을 뽑아내는 과정. 영상을 입력하면 일정 개수(frame per video, fpv=25)의 연속된 프레임을 뽑아내고, MTCNN을 사용하여 얼굴 영역을 추출 및 정렬한다.</br>
 </p>
 
-<br></br>
-
 <p align="center">
 <img src="./3. Figures/Figure2.png"height="110px" width="400px"/>
 <br>
 <b>Figure 2.</b> Figure 1에서 처리한 프레임 데이터를 XceptionNet에 넣어주고, 이를 통해 추출한 features를 다시 Bidirectional-RNN(LSTM)에 넣어 처리할 계획이다. 일정 개수(fpv=25)의 연속된 프레임을 하나의 시퀀스로 처리한다.</br>
 </p>
-
-<br></br>
 
 <p align="center">
 <img src="./3. Figures/Table4.png"height="110px" width="400px"/>
