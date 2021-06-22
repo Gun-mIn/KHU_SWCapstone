@@ -109,7 +109,7 @@ EfficientNet은 앞서 언급했듯 ImageNet에 대한 weight 값을 초기 weig
 <b>Table 5.</b> Celeb-DF의 실험 결과 도표.</br>
 </p>
 
-선행 연구[5]에서의 validation set에 대한 정확도는 98%로, 본 프로젝트에서 최대 **2%**를 향상시켰다. Test set에 대한 정확도와 비교해도 최대 **1.8%**를 향상시켰다. Table 5를 통해 **양방향 LSTM**에서 validation set과 test set에 대한 정확도가 가장 높음을 알 수 있다.
+선행 연구[5]에서의 validation set에 대한 정확도는 98%로, 본 프로젝트에서 최대 <b>2%</b>를 향상시켰다. Test set에 대한 정확도와 비교해도 최대 <b>1.8%</b>를 향상시켰다. Table 5를 통해 **양방향 LSTM**에서 validation set과 test set에 대한 정확도가 가장 높음을 알 수 있다.
 
 ### 3.1.2 NeuralTextures 실험 결과
 선행 연구[3, 5]의 성능과 비교하기 위해 얼굴 영상 하나의 크기를 299x299으로 세팅하였고, 한 영상당 25개의 프레임을 사용했다. Celeb-DF 자체에 포함된 240개의 영상을 test set으로 사용했고, 이를 제외한 나머지에서 20%를 validation set으로 사용했다. 총 20 에포크를 학습시켰고, early stopping을 위한 patience는 5로 설정했다.
@@ -120,7 +120,7 @@ EfficientNet은 앞서 언급했듯 ImageNet에 대한 weight 값을 초기 weig
 <b>Table 6.</b> NT의 실험 결과 도표.</br>
 </p>
 
-선행 연구[5]에서의 validation set에 대한 정확도는 90.71%로, 본 프로젝트에서 최대 **8%**를 향상시켰다. Test set에 대한 정확도와 비교해도 최대 **2%**를 향상시켰다. Table 6을 통해 validation set과 train set에 대한 정확도는 EfficientNet에서 더 높지만, test set에 대한 정확도는 **양방향 LSTM**에서 가장 높음을 알 수 있다.
+선행 연구[5]에서의 validation set에 대한 정확도는 90.71%로, 본 프로젝트에서 최대 <b>8%</b>를 향상시켰다. Test set에 대한 정확도와 비교해도 최대 <b>2%</b>를 향상시켰다. Table 6을 통해 validation set과 train set에 대한 정확도는 EfficientNet에서 더 높지만, test set에 대한 정확도는 **양방향 LSTM**에서 가장 높음을 알 수 있다.
 
 ## 3.2 최종 결과물 주요 특징 및 설명
 Table 5와 6을 통해 알 수 있는 것은 Celeb-DF와 NeuralTextures 모두 양방향 LSTM에서 test 정확도가 가장 높다는 것이다. NeuralTextures의 경우, train set과 validation set에 대한 정확도는 EfficientNet만 사용했을 때가 더 높지만, 학습에 사용되지 않은 test set에 대한 성능은 양방향 LSTM에서 더 높은 것을 보아 일반화 성능은 양방향 LSTM이 더 뛰어남을 알 수 있다.
@@ -135,7 +135,7 @@ Celeb-DF와 같이 최신 조작 기법을 사용한 정교한 조작 영상과,
  앞서 말했던 바와 같이, Xception 모델과의 성능 비교 실험을 추가로 진행하고, 실제 인터넷 상에 유포되는 조작 영상에 대한 탐지 결과를 확인하는 실험을 추가로 진행할 계획이다. 모델 사이즈를 조절한다면, 본 프로젝트의 프로세스를 활용하여 인터넷 상의 영상에 대한 자동화된 탐지 프로세스를 개발할 수 있을 것이다.
 
  # 5. 결론 및 제언
-본 프로젝트에서 Celeb-DF에 대한 정확도는 최대 2%, NeuralTextures에 대한 정확도는 최대 8% 향상시켰다. 이를 통해 얼굴 영역 추출 및 정렬과 CNN 아키텍처 + 양방향 RNN 아키텍처가 실제로 성능 향상에 효과적임을 보일 수 있었다. 향후 epoch과 patience를 늘려서 여러 차례 CNN을 학습시키고, 가장 성능이 좋은 모델을 사용하여 feature를 추출하고 LSTM을 학습시키는 실험을 추가로 진행할 계획이다. 최종 결과물에는 EfficientNet-B7만을 사용하였지만, 기존의 조작 탐지 분야에서 높은 성능으로 주목 받았던 Xception을 추가로 사용하여 실험을 진행하고, 이 둘을 비교할 계획이다. 추가적인 향후 목표로는, faceforensics++ benchmark 사이트[6]에 향상된 성능의 모델을 제출하는 것을 생각하고 있다.
+본 프로젝트에서 Celeb-DF에 대한 정확도는 최대 <b>2%</b>, NeuralTextures에 대한 정확도는 최대 <b>8%</b> 향상시켰다. 이를 통해 얼굴 영역 추출 및 정렬과 CNN 아키텍처 + 양방향 RNN 아키텍처가 실제로 성능 향상에 효과적임을 보일 수 있었다. 향후 epoch과 patience를 늘려서 여러 차례 CNN을 학습시키고, 가장 성능이 좋은 모델을 사용하여 feature를 추출하고 LSTM을 학습시키는 실험을 추가로 진행할 계획이다. 최종 결과물에는 EfficientNet-B7만을 사용하였지만, 기존의 조작 탐지 분야에서 높은 성능으로 주목 받았던 Xception을 추가로 사용하여 실험을 진행하고, 이 둘을 비교할 계획이다. 추가적인 향후 목표로는, faceforensics++ benchmark 사이트[6]에 향상된 성능의 모델을 제출하는 것을 생각하고 있다.
 
  # 6. References
  [1] Kim, J., An, J., Yang, B., Jung, J., & Woo, S. S. (2020). 데이터 기반 딥페이크 탐지기법에 관한 최신 기술 동향 조사. Review of KIISC, 30(5), 79-92.
